@@ -1,0 +1,71 @@
+compile ace.dll[6.1.0],used ace.dll[6.1.0],ace init=1
+theLoggerTask start=1
+[3484848:18:07:57.393199]className=CLoggerTask high_water_mark=270000
+connect oracle ok 1
+[3484848:18:07:57.425021]className=CScanDbCmdTask high_water_mark=3200000
+[3484848:18:07:57.435724]className=CDataAnalyzeTask high_water_mark=3200000
+[3484848:18:07:57.456570]className=CCommTask high_water_mark=16000000
+[1]snd(4):[AT
+]
+[1]rcv(6):[
+
+OK
+
+]
+[2]snd(6):[ATE0
+]
+[2]rcv(6):[
+
+OK
+
+]
+[3]snd(6):[ATQ0
+]
+[3]rcv(6):[
+
+OK
+
+]
+[4]snd(6):[ATV1
+]
+[4]rcv(6):[
+
+OK
+
+]
+[5]snd(11):[AT+CMGF=0
+]
+[5]rcv(6):[
+
+OK
+
+]
+[6]snd(19):[AT+CNMI=2,0,0,0,1
+]
+[6]rcv(6):[
+
+OK
+
+]
+waitting command ...
+
+cmd=[2014-09-01 18:10:24][exit]
+CDataAnalyzeTask thread count = 1
+CDataAnalyzeTask closes down 
+[57690992:18:10:24.823601](1)(CDataAnalyzeTask) Got end while
+CDataAnalyzeTask closes down 
+CScanDbCmdTask thread count = 1
+CScanDbCmdTask closes down 
+[107137904:18:10:24.881001](1)(CScanDbCmdTask) Got end while
+CScanDbCmdTask closes down 
+CCommTask thread count = 1
+CCommTask closes down 
+[47201136:18:10:24.922688](1)(CCommTask) Got end while
+CLoggerTask thread count = 1
+CCommTask closes down 
+CLoggerTask closes down 
+[36711280:18:10:24.922923](1)(CLoggerTask) Got end while
+CLoggerTask closes down 
+free CCommTask...
+free CDataAnalyzeTask...
+free CScanDbCmdTask...
